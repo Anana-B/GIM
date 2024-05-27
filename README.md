@@ -22,4 +22,4 @@ https://anana-b.github.io/GIM/Esercizio_1B/Sunset_Moonrise.html
 
 
 ### Esercizio 3B  
-https://anana-b.github.io/GIM/Esercizio_3B/pong_vrs_1.html
+https://anana-b.github.io/GIM/Esercizio_3B/pong_vrs_1/index.html
