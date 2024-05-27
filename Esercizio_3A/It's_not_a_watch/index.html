@@ -23,10 +23,14 @@
             border-collapse: collapse;
         }
         td {
-            border: 2px solid orangered;
+            border: Zpx solid black;
             padding: 10px;
             text-align: center;
         }
+		.invisible {
+			color : red;
+			opacity : 0.0;
+		}
     </style>
 </head>
 <body>
@@ -35,22 +39,34 @@
     <script>
         // Function to create the horizontal 24-hour watch
         function createWatch() {
+
+			const t=new Date()
+			const s = t.getSeconds()
+			const m = t.getMinutes()
+			const h = t.getHours()
+
+
             const watchTable = document.getElementById("watch");
+			watchTable.innerHTML = ""
             // Create a single row for the watch
-            const row = watchTable.insertRow();
+            
+			const row = watchTable.insertRow();
             // Loop to create 24 cells for hours
-            for (let i = 0; i < 24; i++) {
+            for (let i = 0; i < 60; i++) {
                 // Create a cell for each hour
                 const cell = row.insertCell();
                 // Set the text content to the hour
                 cell.textContent = i;
+				if (i==s) cell.classList.add("invisible")
             }
         }
 
-        // Call the function to create the watch when the window loads
-        window.onload = function() {
-            createWatch();
-        };
+		requestAnimationFrame(loop)
+		function loop()  {
+			requestAnimationFrame(loop)
+			createWatch()
+			
+		}
     </script>
 </body>
 </html>
