@@ -14,7 +14,6 @@ https://anana-b.github.io/GIM/Esercizio_1A/rotazione_3.html
 https://anana-b.github.io/GIM/Esercizio_1A/spostamento_2.html  
 https://anana-b.github.io/GIM/Esercizio_1A/spostamento_3.html  
 
-##### vrs2_spostamento
 https://anana-b.github.io/GIM/Esercizio_1A/vrs2_spostamento_2.html  
 https://anana-b.github.io/GIM/Esercizio_1A/vrs2_spostamento_3.html
 
