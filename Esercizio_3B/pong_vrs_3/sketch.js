@@ -43,6 +43,6 @@ function draw() {
 
         noStroke();
         fill(ball.r, ball.g, ball.b);
-        circle(ball.x, ball.y, 40); // Draw the circle
+        circle(ball.x, ball.y, 40); 
     }
 }
