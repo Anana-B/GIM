@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>It's not a watch</title>
+	<meta name="author"      content="Nome Cognome">
+	<meta name="description" content="Descrizione">
+	<meta name="viewport"    content="width=device-width, initial-scale=1">
+	<link rel="icon"         href="./icons/icon_32.png"  type="image/png">
+	<link rel="icon"         href="./icons/icon_256.png" type="image/png">
+	<link rel="manifest"     href="./manifest.json">
+	<style>
+		
+			body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            background-color: lightgray;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            border: 2px solid orangered;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table id="watch"></table>
+
+    <script>
+        // Function to create the horizontal 24-hour watch
+        function createWatch() {
+            const watchTable = document.getElementById("watch");
+            // Create a single row for the watch
+            const row = watchTable.insertRow();
+            // Loop to create 24 cells for hours
+            for (let i = 0; i < 24; i++) {
+                // Create a cell for each hour
+                const cell = row.insertCell();
+                // Set the text content to the hour
+                cell.textContent = i;
+            }
+        }
+
+        // Call the function to create the watch when the window loads
+        window.onload = function() {
+            createWatch();
+        };
+    </script>
+</body>
+</html>
