@@ -35,6 +35,6 @@ https://anana-b.github.io/GIM/Esercizio_2/Viagra.html
 ### Esercizio 3B  
 https://anana-b.github.io/GIM/Esercizio_3B/pong_vrs_1/index.html  
 https://anana-b.github.io/GIM/Esercizio_3B/pong_vrs_2/index.html  
-https://anana-b.github.io/GIM/Esercizio_3B/pong_vrs_3/index.html
+https://anana-b.github.io/GIM/Esercizio_3B/pong_vrs_3/index.html  
 https://anana-b.github.io/GIM/Esercizio_3B/rain/index.html  
 https://anana-b.github.io/GIM/Esercizio_3B/snow/index.html
