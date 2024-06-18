@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="author" content="Anana Brekashvili" />
+	<title>Viagra</title>
+	<style type="text/css">
+		html{
+			height:100%;
+		}
+		body{
+			background-color: rgb(235,235,235);
+		}
+		canvas{
+			position:absolute;
+			left:50%;
+			top:50%;
+			margin-left: -200px;
+			margin-top: -200px;
+		}
+	</style>
+</head>
+<body>
+	<script type="module">
+
+		import Sequencer from './js/sequencer.min.js';
+
+		Sequencer.make({
+			from         	 : "img/Viagra/01.png",
+			to           	 : "img/Viagra/26.png",
+			playMode     	 : "auto",
+			loop         	 : "loop", // "pong"
+			interval     	 : 40,
+		})
+	</script>
+</body>
+</html>
