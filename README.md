@@ -29,7 +29,7 @@ https://anana-b.github.io/GIM/Esercizio_1B/Sunset_Moonrise.html
 
 
 ### Esercizio 2
-https://anana-b.github.io/GIM/Esercizio_2/moon.html  
+https://anana-b.github.io/GIM/Esercizio_2/Moon.html  
 https://anana-b.github.io/GIM/Esercizio_2/Viagra.html
 
 ### Esercizio 3B  
