@@ -38,7 +38,6 @@ https://anana-b.github.io/GIM/Esercizio_2/viagra.html
 https://anana-b.github.io/GIM/Esercizio_3A/It's_not_a_clock/index.html  
 https://anana-b.github.io/GIM/Esercizio_3A/orologio_anaolgico/index.html  
 https://anana-b.github.io/GIM/Esercizio_3A/orologio_digitale/index.html  
-https://anana-b.github.io/GIM/Esercizio_3A/template_web_app/index.html
 
 
 
