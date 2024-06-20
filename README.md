@@ -39,7 +39,7 @@ https://anana-b.github.io/GIM/Esercizio_3A/It's_not_a_clock/index.html
 https://anana-b.github.io/GIM/Esercizio_3A/orologio_anaolgico/index.html  
 https://anana-b.github.io/GIM/Esercizio_3A/orologio_digitale/index.html  
 
-
+// Per ulteriori informazioni sull'orologio, si prega di aprire il file README. Grazie!
 
 
 
@@ -49,3 +49,6 @@ https://anana-b.github.io/GIM/Esercizio_3B/pong_vrs_2/index.html
 https://anana-b.github.io/GIM/Esercizio_3B/pong_vrs_3/index.html  
 https://anana-b.github.io/GIM/Esercizio_3B/rain/index.html  
 https://anana-b.github.io/GIM/Esercizio_3B/snow/index.html
+
+
+
