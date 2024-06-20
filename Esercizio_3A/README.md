@@ -2,7 +2,7 @@
 
 ## Esercizio 3A
 
-# It's not a clock - Che ora non è? -orologio digitale 
+# It's not a clock - Che ora non è? - orologio digitale 
 Idea - Ho costruito questo orologio digitale partendo dall'idea "che ore sono? - tutte quelle ore che non sono". Il codice prende informazioni dal sistema sull'ora corrente e ti nasconde proprio quei numeri, per esempio, se sono le 11:15:35, ti nasconde quei numeri, non mostrandoli - mostrando tutti gli altri comunque riesci a capire che ore sono.
 
 Visual - Tutti e tre i contenitori hanno forme geometriche: quadrato, triangolo, cerchio. Dalla teoria del colore di Itten, ogni forma ha il suo colore, per questo il quadrato è rosso, il triangolo è verde, il cerchio è blu, riprendendo RGB. I colori cambiano ogni secondo, basandosi sull'orario attuale. Il numero dell'ora - hour decide la quantità di rosso, il triangolo - verde, il cerchio - blu. Così costruiamo un colore con il numero di RGB.
