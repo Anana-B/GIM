@@ -1,72 +1,23 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<title>It's not a watch</title>
-	<meta name="author"      content="Nome Cognome">
-	<meta name="description" content="Descrizione">
-	<meta name="viewport"    content="width=device-width, initial-scale=1">
-	<link rel="icon"         href="./icons/icon_32.png"  type="image/png">
-	<link rel="icon"         href="./icons/icon_256.png" type="image/png">
-	<link rel="manifest"     href="./manifest.json">
-	<style>
-		
-			body, html {
-            height: 100%;
-            margin: 0;
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>It's not a clock</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <style>
+        body {
             display: flex;
-            justify-content: center; /* Center horizontally */
-            align-items: center; /* Center vertically */
-            background-color: lightgray;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            margin: 0;
         }
-        table {
-            border-collapse: collapse;
-        }
-        td {
-            border: Zpx solid black;
-            padding: 10px;
-            text-align: center;
-        }
-		.invisible {
-			color : red;
-			opacity : 0.0;
-		}
     </style>
 </head>
+
 <body>
-    <table id="watch"></table>
-
-    <script>
-        // Function to create the horizontal 24-hour watch
-        function createWatch() {
-
-			const t=new Date()
-			const s = t.getSeconds()
-			const m = t.getMinutes()
-			const h = t.getHours()
-
-
-            const watchTable = document.getElementById("watch");
-			watchTable.innerHTML = ""
-            // Create a single row for the watch
-            
-			const row = watchTable.insertRow();
-            // Loop to create 24 cells for hours
-            for (let i = 0; i < 60; i++) {
-                // Create a cell for each hour
-                const cell = row.insertCell();
-                // Set the text content to the hour
-                cell.textContent = i;
-				if (i==s) cell.classList.add("invisible")
-            }
-        }
-
-		requestAnimationFrame(loop)
-		function loop()  {
-			requestAnimationFrame(loop)
-			createWatch()
-			
-		}
-    </script>
+    <script src="main.js"></script>
 </body>
+
 </html>

@@ -1,44 +1,48 @@
 function setup() {
-	createCanvas(windowWidth, windowHeight)
+    createCanvas(windowWidth, windowHeight);
 }
 
 function windowResized() {
-	resizeCanvas(windowWidth, windowHeight)
+    resizeCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
-	background(220)
+    const currentHour = hour();
+    const currentMinute = minute();
+    const currentSecond = second();
 
-	noStroke()
-	fill(0)
-	rect(0, height/3 * 0, second() / 60 * width, height/3)
-	rect(0, height/3 * 1, minute() / 60 * width, height/3)
-	rect(0, height/3 * 2, hour()   / 24 * width, height/3)
+    
+    const hoursRgb = Math.floor((currentHour / 23) * 255);
+    const minutesRgb = Math.floor((currentMinute / 59) * 255);
+    const secondsRgb = Math.floor((currentSecond / 59) * 255);
 
-	// let s = second()
-	// if (s < 10) {
-	// 	s = "0" + s
-	// }
-	// // alternativa: s = s.padLeft(2, '0')
+    
+    const luminance = (0.2126 * hoursRgb + 0.7152 * minutesRgb + 0.0722 * secondsRgb) / 255;
 
-	// let m = minute()
-	// if (m < 10) {
-	// 	m = "0" + m
-	// }
+    
+    let backgroundColor;
+    if (luminance > 0.5) {
+        backgroundColor = color(255);
+    } else {
+        backgroundColor = color(0);
+    }
 
-	// let h = hour()
-	// if (h < 10) {
-	// 	h = "0" + h
-	// }
+    background(backgroundColor);
 
-	// textAlign(CENTER, CENTER)
-	// textSize(30)
-	// fill(255)
+    
+    const strokeColor = luminance > 0.5 ? color(0) : color(255);
 
-	// const ora = h + ":" + m + ":" + s
-	// text(ora, width/2, height/2)
+    noStroke();
+    fill(hoursRgb, minutesRgb, secondsRgb);
+    
+   
+    rect(0, height / 3 * 0, currentHour / 24 * width, height / 3);
+    
+ 
+    rect(0, height / 3 * 1, currentMinute / 60 * width, height / 3);
+    
+    
+    rect(0, height / 3 * 2, currentSecond / 60 * width, height / 3);
 
-	// const totaleSecondi = hour() * 60 * 60 + minute() * 60 + second()
-	// text(totaleSecondi, width/2, height/2)
-
+  
 }
